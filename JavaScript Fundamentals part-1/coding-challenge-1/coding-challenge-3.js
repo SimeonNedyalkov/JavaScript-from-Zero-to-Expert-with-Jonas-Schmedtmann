@@ -13,8 +13,10 @@ const Koalas_total_score = (Koalas_score1 + Koalas_score2 + Koalas_score3) / 3
 console.log(`Dolphins score : ${Dolphins_total_score}, Koalas score : ${Koalas_total_score}`)
 if (Dolphins_total_score > Koalas_total_score && Dolphins_total_score > 100) {
     console.log('Dolphins win')
-} else if (Koalas_total_score === Dolphins_total_score) {
+} else if (Koalas_total_score === Dolphins_total_score && Dolphins_total_score >= 100 && Koalas_total_score >= 100) {
     console.log('Its a draw')
-}  else if (Dolphins_total_score < Koalas_total_score) {
+}  else if (Dolphins_total_score < Koalas_total_score && Koalas_total_score > 100) {
     console.log('Koalas win')
+} else {
+    console.log('No one wins')
 }
